@@ -4,12 +4,13 @@
 <div class="container">
     <h1>Contenido principal</h1>
     
-    
+ <!--stefanny-->   
     
  <?php
 include_once '/bd/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
+
 
 $consulta = "SELECT id, nombre, pais, edad FROM personas";
 $resultado = $conexion->prepare($consulta);
